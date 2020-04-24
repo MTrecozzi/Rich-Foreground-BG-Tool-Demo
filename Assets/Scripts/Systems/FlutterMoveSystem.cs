@@ -29,6 +29,7 @@ public class FlutterMoveSystem : JobComponentSystem
                  * and this is a first draft.
                  */
                 float3 heading = waypointPositions[wpMoveComp.currentWP] - position.Value;
+                // the rotation and the z axis makes things a bit funky after a while... to be fixed
                 quaternion targetDirection = quaternion.LookRotation(heading, math.up());
                 rotation.Value = math.slerp(rotation.Value, targetDirection, deltaTime * wpMoveComp.rotationSpeed);
                 position.Value += deltaTime * wpMoveComp.speed * math.forward(rotation.Value);
@@ -45,8 +46,8 @@ public class FlutterMoveSystem : JobComponentSystem
                     {
                         // at target and done waiting
                         waitComp.waiting = false;
-                        waitComp.curTime = 0;
-                        wpMoveComp.currentWP++;
+                        waitComp.curTime = 0;              
+                        wpMoveComp.currentWP++; // Should probably have it pick a random index to head to next
 
                         if(wpMoveComp.currentWP >= waypointPositions.Length)
                         {
