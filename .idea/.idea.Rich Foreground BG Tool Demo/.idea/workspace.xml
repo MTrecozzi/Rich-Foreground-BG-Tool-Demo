@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f902be12-4858-4dbc-bd3f-b7f4fee1da04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BouncyPumpkinAssets_9.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BouncyPumpkinAssets_9.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/FlutterMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/FlutterMoveSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +17,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/TempMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/WaitComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/GameMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EcsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/FlutterMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/ParrallaxTag.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/TempMoveDemoTag.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -29,6 +33,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Component Data/TempMoveDemoTag.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/TempMoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/EcsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Component Data/WaitComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/FlutterMoveSystem.cs" />
       </list>
     </option>
   </component>
@@ -84,6 +90,7 @@
       <updated>1587406315095</updated>
       <workItem from="1587406318402" duration="4351000" />
       <workItem from="1587571195210" duration="611000" />
+      <workItem from="1587764802282" duration="714000" />
     </task>
     <servers />
   </component>

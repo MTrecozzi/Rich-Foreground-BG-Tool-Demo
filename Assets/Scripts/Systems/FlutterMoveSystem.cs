@@ -21,18 +21,22 @@ public class FlutterMoveSystem : JobComponentSystem
 
         var jobHandle = Entities
             .WithName("MoveSystem")
-            .ForEach((ref Translation position, ref Rotation rotation, ref WayPointMoveComponent wpMoveComp, ref WaitComponent waitComp) =>
+            .ForEach((ref Translation position, ref WayPointMoveComponent wpMoveComp, ref WaitComponent waitComp) =>
             {
                 /*
                  * I figure using a sine curve for the butterflies as they go from waypoint to waypoint
                  * would look the most butterfly-esque. Didn't implement that yet because math is hard 
                  * and this is a first draft.
                  */
-                float3 heading = waypointPositions[wpMoveComp.currentWP] - position.Value;
+                float3 heading = waypointPositions[wpMoveComp.currentWP] + new float3(0, 0, -0.5f) - position.Value;
                 // the rotation and the z axis makes things a bit funky after a while... to be fixed
                 quaternion targetDirection = quaternion.LookRotation(heading, math.up());
-                rotation.Value = math.slerp(rotation.Value, targetDirection, deltaTime * wpMoveComp.rotationSpeed);
-                position.Value += deltaTime * wpMoveComp.speed * math.forward(rotation.Value);
+                
+                //rotation.Value = math.slerp(rotation.Value, targetDirection, deltaTime * wpMoveComp.rotationSpeed);
+                
+                //position.Value += deltaTime * wpMoveComp.speed * math.forward(rotation.Value);
+
+                position.Value += deltaTime * (wpMoveComp.speed * math.normalize(heading));
 
                 // We've reached a waypoint!
                 if (math.distance(position.Value, waypointPositions[wpMoveComp.currentWP]) < 3)
