@@ -17,7 +17,8 @@ public class FlutterAwaySystem : JobComponentSystem
            .WithName("FlutterAwaySystem")
            .ForEach((ref Translation position, ref FlutterAwayComponent fAwayComp) =>
            {
-               position.Value += fAwayComp.target;
+               position.Value += math.normalize(fAwayComp.target - position.Value) * deltaTime * 10;
+               
                if(math.distance(position.Value, fAwayComp.target) < 1)
                {
                    // destroy entity - not sure how to do this

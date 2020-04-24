@@ -13,7 +13,5 @@ using Unity.Entities;
 public struct WayPointMoveComponent : IComponentData
 {
     public float speed;
-    public float rotationSpeed;
     public int currentWP;
-    public bool disable;
 }

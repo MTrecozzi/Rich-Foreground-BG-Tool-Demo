@@ -112,6 +112,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  rotationSpeed: 0
   currentWP: 0
-  disable: 0

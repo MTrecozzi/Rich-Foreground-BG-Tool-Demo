@@ -8,7 +8,5 @@ using Unity.Mathematics;
 public struct FlutterAwayComponent : IComponentData
 {
     public float3 target;
-    public float speed;
-    public bool disabled;
 
 }

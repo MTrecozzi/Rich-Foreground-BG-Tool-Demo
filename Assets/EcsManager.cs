@@ -22,7 +22,6 @@ public class EcsManager : MonoBehaviour
         world = World.DefaultGameObjectInjectionWorld;
         manager = World.DefaultGameObjectInjectionWorld.EntityManager;
         settings = GameObjectConversionSettings.FromWorld(world, null);
-
     }
 
     void SpawnRandom()
@@ -41,16 +40,16 @@ public class EcsManager : MonoBehaviour
     void SpawnTestButterfly()
     {
         // Creates entities that spawn in a random spot, with a random move and rotation speed, and a random wait time.
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 1; i++)
         {
             var entity = manager.Instantiate(GameObjectConversionUtility.ConvertGameObjectHierarchy(bPrefab, settings));
 
             manager.SetComponentData(entity, new Translation { Value = new float3(UnityEngine.Random.Range(-15f, 15f), 
-                UnityEngine.Random.Range(0, 10f), UnityEngine.Random.Range(5, 20)) });
+                UnityEngine.Random.Range(0, 10f), UnityEngine.Random.Range(0, 0)) });
             manager.SetComponentData(entity, new Rotation { Value = quaternion.identity });
             manager.SetComponentData(entity, new WayPointMoveComponent { speed = UnityEngine.Random.Range(2, 8),
-                rotationSpeed = UnityEngine.Random.Range(1, 10)});
-            manager.SetComponentData(entity, new WaitComponent { maxTime = UnityEngine.Random.Range(.5f, 3f) });
+                currentWP = UnityEngine.Random.Range(0, GameDataManager.S.waypoints.Length)});
+            manager.SetComponentData(entity, new WaitComponent { maxTime = UnityEngine.Random.Range(1f, 4f) });
         
         }
     }
@@ -58,11 +57,7 @@ public class EcsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SpawnRandom();
-        }
-
+        
         if (Input.GetKeyDown(KeyCode.B))
         {
             SpawnTestButterfly();
