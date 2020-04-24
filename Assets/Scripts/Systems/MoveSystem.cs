@@ -24,7 +24,7 @@ public class MoveSystem : JobComponentSystem
                 rotation.Value = math.slerp(rotation.Value, targetDirection, deltaTime * wpMoveComp.rotationSpeed);
                 position.Value += deltaTime * wpMoveComp.speed * math.forward(rotation.Value);
 
-                if (math.distance(position.Value, waypointPositions[wpMoveComp.currentWP]) < 2)
+                if (math.distance(position.Value, waypointPositions[wpMoveComp.currentWP]) < 3)
                 {
                     if (!waitComp.waiting)
                     {
