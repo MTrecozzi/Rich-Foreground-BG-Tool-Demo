@@ -40,6 +40,7 @@ public class EcsManager : MonoBehaviour
 
     void SpawnTestButterfly()
     {
+        // Creates entities that spawn in a random spot, with a random move and rotation speed, and a random wait time.
         for (int i = 0; i < 3; i++)
         {
             var entity = manager.Instantiate(GameObjectConversionUtility.ConvertGameObjectHierarchy(bPrefab, settings));

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Mathematics;
 
+/**
+ * I don't think this is the best way to manage waypoints in a full scale game, but for now it works.
+ **/
 public class GameDataManager : MonoBehaviour
 {
     public static GameDataManager S;

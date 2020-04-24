@@ -7,7 +7,11 @@ using Unity.Transforms;
 using Unity.Jobs;
 using Unity.Collections;
 
-public class MoveSystem : JobComponentSystem
+/**
+ * Makes entities flutter...sort of.
+ * 
+ **/
+public class FlutterMoveSystem : JobComponentSystem
 {
     protected override JobHandle OnUpdate(JobHandle inputDeps)
     {
@@ -19,16 +23,22 @@ public class MoveSystem : JobComponentSystem
             .WithName("MoveSystem")
             .ForEach((ref Translation position, ref Rotation rotation, ref WayPointMoveComponent wpMoveComp, ref WaitComponent waitComp) =>
             {
+                /*
+                 * I figure using a sine curve for the butterflies as they go from waypoint to waypoint
+                 * would look the most butterfly-esque. Didn't implement that yet because math is hard 
+                 * and this is a first draft.
+                 */
                 float3 heading = waypointPositions[wpMoveComp.currentWP] - position.Value;
                 quaternion targetDirection = quaternion.LookRotation(heading, math.up());
                 rotation.Value = math.slerp(rotation.Value, targetDirection, deltaTime * wpMoveComp.rotationSpeed);
                 position.Value += deltaTime * wpMoveComp.speed * math.forward(rotation.Value);
 
+                // We've reached a waypoint!
                 if (math.distance(position.Value, waypointPositions[wpMoveComp.currentWP]) < 3)
                 {
                     if (!waitComp.waiting)
                     {
-                        // at target but not waiting yet
+                        // just arrived at target
                         waitComp.waiting = true;
 
                     } else if (waitComp.waiting && waitComp.curTime >= waitComp.maxTime)
