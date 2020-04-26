@@ -21,7 +21,7 @@ public class FlutterMoveSystem : JobComponentSystem
         var rnd = new Unity.Mathematics.Random((uint)UnityEngine.Random.Range(1, 100000));
 
         var jobHandle = Entities
-            .WithName("MoveSystem")
+            .WithName("FlutterMoveSystem")
             .ForEach((ref Translation position, ref WayPointMoveComponent wpMoveComp, ref WaitComponent waitComp, ref SineCurveComponent sinComp) =>
             {
                 
