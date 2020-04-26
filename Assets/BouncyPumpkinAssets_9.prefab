@@ -127,6 +127,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frequency: 0
-  waveWidth: 0
+  amp: 0
   y0: 0
   startTime: 0

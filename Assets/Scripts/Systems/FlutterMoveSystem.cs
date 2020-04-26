@@ -22,7 +22,7 @@ public class FlutterMoveSystem : JobComponentSystem
 
         var jobHandle = Entities
             .WithName("MoveSystem")
-            .ForEach((ref Translation position, ref WayPointMoveComponent wpMoveComp, ref WaitComponent waitComp) =>
+            .ForEach((ref Translation position, ref WayPointMoveComponent wpMoveComp, ref WaitComponent waitComp, ref SineCurveComponent sinComp) =>
             {
                 
                 float3 heading = waypointPositions[wpMoveComp.currentWP] + new float3(0, 0, -0.5f) - position.Value;
@@ -42,6 +42,7 @@ public class FlutterMoveSystem : JobComponentSystem
                         // at target and done waiting
                         waitComp.waiting = false;
                         waitComp.curTime = 0;
+                        sinComp.disabled = false;
 
                         waitComp.maxTime = rnd.NextFloat(.5f, 5);
                         wpMoveComp.currentWP = rnd.NextInt(0, waypointPositions.Length);
@@ -50,6 +51,7 @@ public class FlutterMoveSystem : JobComponentSystem
                     {
                         // at target and waiting
                         waitComp.curTime += deltaTime;
+                        sinComp.disabled = true;
                         
                     }
                 }

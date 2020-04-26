@@ -7,6 +7,9 @@ using Unity.Transforms;
 using Unity.Jobs;
 using Unity.Collections;
 
+/**
+ * Makes an entity's y position move in a sine curve.
+ */
 public class SineMoveSystem : JobComponentSystem
 {
     protected override JobHandle OnUpdate(JobHandle inputDeps)
@@ -18,11 +21,14 @@ public class SineMoveSystem : JobComponentSystem
             .WithName("SineMoveSystem")
             .ForEach((ref Translation position, ref SineCurveComponent sinComp) =>
             {
-                sinComp.y0 = position.Value.y;
-                
-                float sin = Mathf.Sin(Mathf.PI * .5f * age / sinComp.amp);
-                position.Value.y = sinComp.y0 + sinComp.frequency * sin;
+                if (!sinComp.disabled)
+                {
+                    sinComp.y0 = position.Value.y;
 
+                    float sin = Mathf.Sin(Mathf.PI * .5f * age / sinComp.amp);
+                    position.Value.y = sinComp.y0 + sinComp.frequency * sin;
+
+                }
 
             })
             .Schedule(inputDeps);
