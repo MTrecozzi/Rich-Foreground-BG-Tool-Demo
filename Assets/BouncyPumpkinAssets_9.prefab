@@ -130,3 +130,4 @@ MonoBehaviour:
   amp: 0
   y0: 0
   startTime: 0
+  disabled: 0
