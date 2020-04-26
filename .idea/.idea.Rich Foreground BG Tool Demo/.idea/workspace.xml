@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f902be12-4858-4dbc-bd3f-b7f4fee1da04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BouncyPumpkinAssets_9.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BouncyPumpkinAssets_9.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EcsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EcsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Component Data/SineCurveComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Component Data/SineCurveComponent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/FlutterMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/FlutterMoveSystem.cs" afterDir="false" />
@@ -50,10 +48,10 @@
         <option value="$PROJECT_DIR$/Assets/FlyAwayEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/FlutterAwaySystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Component Data/TransformOffsetComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/EcsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/FlutterMoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Component Data/SineCurveComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SineMoveSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/FlutterMoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/EcsManager.cs" />
       </list>
     </option>
   </component>

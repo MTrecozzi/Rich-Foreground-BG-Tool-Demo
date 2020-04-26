@@ -51,7 +51,7 @@ public class EcsManager : MonoBehaviour
                 currentWP = UnityEngine.Random.Range(0, GameDataManager.S.waypoints.Length)});
             manager.SetComponentData(entity, new WaitComponent { maxTime = UnityEngine.Random.Range(1f, 4f) });
             manager.SetComponentData(entity, new SineCurveComponent { frequency = UnityEngine.Random.Range(1, 2f),
-                amp = UnityEngine.Random.Range(100, 200), startTime = Time.time });
+                amp = UnityEngine.Random.Range(100, 200)});
 
         }
     }

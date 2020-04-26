@@ -9,8 +9,6 @@ public struct SineCurveComponent : IComponentData
 {
     public float frequency;
     public float amp;
-    public float y0;
-    public float startTime;
     public bool disabled;
     public float elapsedTime;
 }

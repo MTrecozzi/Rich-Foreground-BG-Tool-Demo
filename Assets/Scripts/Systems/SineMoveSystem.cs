@@ -17,7 +17,6 @@ public class SineMoveSystem : JobComponentSystem
     {
         
         float deltaTime = Time.DeltaTime;
-        float age = UnityEngine.Time.time - deltaTime;
 
         var jobHandle = Entities
             .WithName("SineMoveSystem")
@@ -26,6 +25,7 @@ public class SineMoveSystem : JobComponentSystem
                 if (!sinComp.disabled)
                 {
                     sinComp.elapsedTime += deltaTime;
+                    // frequency = speed of the offsetting, amp = length of our curve
                     offsetPos.Value.y = -math.sin(sinComp.elapsedTime * sinComp.frequency) * deltaTime * sinComp.amp;
                 }
 

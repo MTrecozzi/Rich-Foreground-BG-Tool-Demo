@@ -20,18 +20,23 @@ public class FlutterMoveSystem : JobComponentSystem
             Allocator.TempJob);
         var rnd = new Unity.Mathematics.Random((uint)UnityEngine.Random.Range(1, 100000));
 
+        float pointOffset = 0.3f;
+
         var jobHandle = Entities
             .WithName("FlutterMoveSystem")
             .ForEach((ref Translation position, ref WayPointMoveComponent wpMoveComp, ref WaitComponent waitComp, ref SineCurveComponent sinComp) =>
             {
-                
-                float3 heading = waypointPositions[wpMoveComp.currentWP] + new float3(0, 0, -0.5f) - position.Value;
+                float3 heading = waypointPositions[wpMoveComp.currentWP] + new float3(0, 0, -pointOffset) - position.Value;
                 quaternion targetDirection = quaternion.LookRotation(heading, math.up());
-                
-                position.Value += deltaTime * (wpMoveComp.speed * math.normalize(heading));
+
+
+                if (!waitComp.waiting)
+                {
+                    position.Value += deltaTime * (wpMoveComp.speed * math.normalize(heading));
+                }
 
                 // We've reached a waypoint!
-                if (math.distance(position.Value, waypointPositions[wpMoveComp.currentWP]) < 1)
+                if (math.distance(position.Value, waypointPositions[wpMoveComp.currentWP] + new float3(0, 0, -pointOffset)) < 0.1f)
                 {
                     if (!waitComp.waiting)
                     {
