@@ -18,28 +18,19 @@ public class FlutterMoveSystem : JobComponentSystem
         float deltaTime = Time.DeltaTime;
         NativeArray<float3> waypointPositions = new NativeArray<float3>(GameDataManager.S.wps,
             Allocator.TempJob);
+        var rnd = new Unity.Mathematics.Random((uint)UnityEngine.Random.Range(1, 100000));
 
         var jobHandle = Entities
             .WithName("MoveSystem")
             .ForEach((ref Translation position, ref WayPointMoveComponent wpMoveComp, ref WaitComponent waitComp) =>
             {
-                /*
-                 * I figure using a sine curve for the butterflies as they go from waypoint to waypoint
-                 * would look the most butterfly-esque. Didn't implement that yet because math is hard 
-                 * and this is a first draft.
-                 */
+                
                 float3 heading = waypointPositions[wpMoveComp.currentWP] + new float3(0, 0, -0.5f) - position.Value;
-                // the rotation and the z axis makes things a bit funky after a while... to be fixed
                 quaternion targetDirection = quaternion.LookRotation(heading, math.up());
-                
-                //rotation.Value = math.slerp(rotation.Value, targetDirection, deltaTime * wpMoveComp.rotationSpeed);
-                
-                //position.Value += deltaTime * wpMoveComp.speed * math.forward(rotation.Value);
-
                 position.Value += deltaTime * (wpMoveComp.speed * math.normalize(heading));
 
                 // We've reached a waypoint!
-                if (math.distance(position.Value, waypointPositions[wpMoveComp.currentWP]) < 3)
+                if (math.distance(position.Value, waypointPositions[wpMoveComp.currentWP]) < 1)
                 {
                     if (!waitComp.waiting)
                     {
@@ -50,18 +41,16 @@ public class FlutterMoveSystem : JobComponentSystem
                     {
                         // at target and done waiting
                         waitComp.waiting = false;
-                        waitComp.curTime = 0;              
-                        wpMoveComp.currentWP++; // Should probably have it pick a random index to head to next
+                        waitComp.curTime = 0;
 
-                        if(wpMoveComp.currentWP >= waypointPositions.Length)
-                        {
-                            wpMoveComp.currentWP = 0;
-                        }
+                        waitComp.maxTime = rnd.NextFloat(.5f, 5);
+                        wpMoveComp.currentWP = rnd.NextInt(0, waypointPositions.Length);
 
                     } else
                     {
                         // at target and waiting
                         waitComp.curTime += deltaTime;
+                        
                     }
                 }
             })
