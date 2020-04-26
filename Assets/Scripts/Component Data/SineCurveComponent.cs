@@ -12,4 +12,5 @@ public struct SineCurveComponent : IComponentData
     public float y0;
     public float startTime;
     public bool disabled;
+    public float elapsedTime;
 }

@@ -50,8 +50,8 @@ public class EcsManager : MonoBehaviour
             manager.SetComponentData(entity, new WayPointMoveComponent { speed = UnityEngine.Random.Range(2, 8),
                 currentWP = UnityEngine.Random.Range(0, GameDataManager.S.waypoints.Length)});
             manager.SetComponentData(entity, new WaitComponent { maxTime = UnityEngine.Random.Range(1f, 4f) });
-            manager.SetComponentData(entity, new SineCurveComponent { frequency = UnityEngine.Random.Range(.03f, .05f),
-                amp = UnityEngine.Random.Range(.3f, .5f), startTime = Time.time });
+            manager.SetComponentData(entity, new SineCurveComponent { frequency = UnityEngine.Random.Range(1, 2f),
+                amp = UnityEngine.Random.Range(100, 200), startTime = Time.time });
 
         }
     }

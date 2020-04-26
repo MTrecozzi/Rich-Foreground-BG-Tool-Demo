@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3545855024305923934}
   - component: {fileID: -4844448077164431808}
   - component: {fileID: 2541207521899754071}
+  - component: {fileID: -6035918437238937908}
   m_Layer: 0
   m_Name: BouncyPumpkinAssets_9
   m_TagString: Untagged
@@ -131,3 +132,20 @@ MonoBehaviour:
   y0: 0
   startTime: 0
   disabled: 0
+  elapsedTime: 0
+--- !u!114 &-6035918437238937908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163259955209510152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe42f595b0f3644d9b4c592823f8afa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Value:
+    x: 0
+    y: 0
+    z: 0

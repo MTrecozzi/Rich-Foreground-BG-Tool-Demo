@@ -6,10 +6,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/BouncyPumpkinAssets_9.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BouncyPumpkinAssets_9.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EcsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EcsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Component Data/FlutterAwayComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Component Data/FlutterAwayComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Component Data/WayPointMoveComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Component Data/WayPointMoveComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/FlutterAwaySystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/FlutterAwaySystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Component Data/SineCurveComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Component Data/SineCurveComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/FlutterMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/FlutterMoveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/SineMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/SineMoveSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,17 +20,21 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/TempMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/WaitComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/GameMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EcsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlyAwayEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/WayPointMoveComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/FlutterAwaySystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BouncyPumpkinAssets_9.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/FlutterAwayComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/TransformOffsetComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/WaitComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/GameMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/SineMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/FlutterMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/ParrallaxTag.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/WayPointMoveComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/TempMoveDemoTag.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/FlutterAwaySystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/FlutterAwayComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/SineCurveComponent.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -42,12 +45,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Component Data/TempMoveDemoTag.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/TempMoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Component Data/WaitComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/FlutterMoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Component Data/WayPointMoveComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Component Data/FlutterAwayComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/FlyAwayEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/FlutterAwaySystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Component Data/TransformOffsetComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/EcsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Component Data/SineCurveComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SineMoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/FlutterMoveSystem.cs" />
       </list>
     </option>
   </component>

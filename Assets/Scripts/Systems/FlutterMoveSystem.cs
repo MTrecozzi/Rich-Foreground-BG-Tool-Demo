@@ -27,6 +27,7 @@ public class FlutterMoveSystem : JobComponentSystem
                 
                 float3 heading = waypointPositions[wpMoveComp.currentWP] + new float3(0, 0, -0.5f) - position.Value;
                 quaternion targetDirection = quaternion.LookRotation(heading, math.up());
+                
                 position.Value += deltaTime * (wpMoveComp.speed * math.normalize(heading));
 
                 // We've reached a waypoint!
@@ -64,3 +65,5 @@ public class FlutterMoveSystem : JobComponentSystem
     }
 
 }
+
+

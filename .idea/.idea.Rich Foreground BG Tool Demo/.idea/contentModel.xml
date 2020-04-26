@@ -13,7 +13,9 @@
           <e p="Component Data" t="Include">
             <e p="FlutterAwayComponent.cs" t="Include" />
             <e p="ParrallaxTag.cs" t="Include" />
+            <e p="SineCurveComponent.cs" t="Include" />
             <e p="TempMoveDemoTag.cs" t="Include" />
+            <e p="TransformOffsetComponent.cs" t="Include" />
             <e p="WaitComponent.cs" t="Include" />
             <e p="WayPointMoveComponent.cs" t="Include" />
           </e>
@@ -21,6 +23,7 @@
             <e p="FlutterAwaySystem.cs" t="Include" />
             <e p="FlutterMoveSystem.cs" t="Include" />
             <e p="GameMoveSystem.cs" t="Include" />
+            <e p="SineMoveSystem.cs" t="Include" />
             <e p="TempMoveSystem.cs" t="Include" />
           </e>
         </e>
