@@ -34,3 +34,21 @@ public class TempMoveSystem : SystemBase
 
     }
 }
+
+public class TransformOffsetMoveSystem : SystemBase
+{
+    protected override void OnUpdate()
+    {
+        float deltaTime = UnityEngine.Time.deltaTime;
+        
+        Entities.ForEach((ref Translation translation, ref TransformOffsetComponent transformOffsetComponent, ref WaitComponent waitComponent) =>
+            {
+
+                if (!waitComponent.waiting)
+                {
+                    translation.Value.y += transformOffsetComponent.Value.y * deltaTime * 5;
+                }
+            }).ScheduleParallel();
+
+    }
+}

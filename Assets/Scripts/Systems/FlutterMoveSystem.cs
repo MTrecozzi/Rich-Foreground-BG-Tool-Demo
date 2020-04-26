@@ -24,11 +24,10 @@ public class FlutterMoveSystem : JobComponentSystem
 
         var jobHandle = Entities
             .WithName("FlutterMoveSystem")
-            .ForEach((ref Translation position, ref WayPointMoveComponent wpMoveComp, ref WaitComponent waitComp, ref SineCurveComponent sinComp) =>
+            .ForEach((ref Translation position, ref WayPointMoveComponent wpMoveComp, ref WaitComponent waitComp, ref SineCurveComponent sinComp, ref TransformOffsetComponent offset) =>
             {
                 float3 heading = waypointPositions[wpMoveComp.currentWP] + new float3(0, 0, -pointOffset) - position.Value;
                 quaternion targetDirection = quaternion.LookRotation(heading, math.up());
-
 
                 if (!waitComp.waiting)
                 {

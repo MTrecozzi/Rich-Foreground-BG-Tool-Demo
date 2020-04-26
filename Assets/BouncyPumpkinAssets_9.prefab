@@ -129,8 +129,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   frequency: 0
   amp: 0
-  y0: 0
-  startTime: 0
   disabled: 0
   elapsedTime: 0
 --- !u!114 &-6035918437238937908
