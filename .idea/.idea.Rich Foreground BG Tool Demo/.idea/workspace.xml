@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f902be12-4858-4dbc-bd3f-b7f4fee1da04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EcsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EcsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scaling Up.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scaling Up.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scaling Up/Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scaling Up/Volume Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,13 +54,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/FlutterMoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SineMoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/TempMoveSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/EcsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Timeline/CustomPlayable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Timeline/CustomPlayableTrack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Timeline/CustomClip.cs" />
         <option value="$PROJECT_DIR$/Assets/FlyAwayEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Timeline/CustomBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Timeline/ECSControlPlayableBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/EcsManager.cs" />
       </list>
     </option>
   </component>
@@ -112,7 +118,7 @@
       <workItem from="1587571195210" duration="611000" />
       <workItem from="1587764802282" duration="1437000" />
       <workItem from="1587766256428" duration="1629000" />
-      <workItem from="1588197842594" duration="3059000" />
+      <workItem from="1588197842594" duration="4178000" />
     </task>
     <servers />
   </component>

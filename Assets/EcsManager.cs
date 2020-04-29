@@ -24,19 +24,6 @@ public class EcsManager : MonoBehaviour
         settings = GameObjectConversionSettings.FromWorld(world, null);
     }
 
-    void SpawnRandom()
-    {
-
-        for (int i = 0; i < 20; i++)
-        {
-            Entity entity = GameObjectConversionUtility.ConvertGameObjectHierarchy(prefab, settings);
-        
-            manager.SetComponentData(entity, new Translation { Value = new float3(UnityEngine.Random.Range(-15f, 15f), UnityEngine.Random.Range(-3f, 10f) , UnityEngine.Random.Range(5, 20))});
-            manager.SetComponentData(entity, new TempMoveDemoTag { direction = 1});
-            manager.Instantiate(entity);
-        }
-    }
-
     void SpawnTestButterfly()
     {
         // Creates entities that spawn in a random spot, with a random move and rotation speed, and a random wait time.
