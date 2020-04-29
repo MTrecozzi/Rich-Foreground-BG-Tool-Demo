@@ -26,6 +26,11 @@
             <e p="SineMoveSystem.cs" t="Include" />
             <e p="TempMoveSystem.cs" t="Include" />
           </e>
+          <e p="Timeline" t="Include">
+            <e p="ECSControlPlayableBehaviour.cs" t="Include" />
+            <e p="FlutterAwayPlayableTrack.cs" t="Include" />
+            <e p="FlyAwayClip.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

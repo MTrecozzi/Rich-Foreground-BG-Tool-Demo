@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Unity.Entities;
 using Unity.Mathematics;
+using UnityEditor;
 using UnityEngine;
 
 public class FlyAwayEvent : MonoBehaviour
@@ -17,8 +18,17 @@ public class FlyAwayEvent : MonoBehaviour
         }
     }
 
+
+    public void FlyAway()
+    {
+        ChangeArchetype();
+    }
+
+    
+    
     private void ChangeArchetype()
     {
+
         World world = World.DefaultGameObjectInjectionWorld;
 
         EntityManager entityManager = world.GetExistingSystem<FlutterMoveSystem>().EntityManager;

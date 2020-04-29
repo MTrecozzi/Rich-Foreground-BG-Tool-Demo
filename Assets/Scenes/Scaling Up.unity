@@ -970,6 +970,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &728512342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 728512344}
+  - component: {fileID: 728512343}
+  m_Layer: 0
+  m_Name: Cinematic Director
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!320 &728512343
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728512342}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: b53166821e900a943b8ade0711efa8e2, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 7286382243318374161, guid: b53166821e900a943b8ade0711efa8e2, type: 2}
+    value: {fileID: 1119308687}
+  - key: {fileID: 6679315194943984547, guid: b53166821e900a943b8ade0711efa8e2, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References:
+    - d1a5c610357bbe247a5884e4f1af4842: {fileID: 1119308686}
+--- !u!4 &728512344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728512342}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.6583676, y: -3.441365, z: 15.282223}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &747609557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1731,6 +1784,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1956302363}
   - component: {fileID: 1956302364}
+  - component: {fileID: 1956302365}
   m_Layer: 0
   m_Name: ECS Manager
   m_TagString: Untagged
@@ -1766,6 +1820,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1163259955209510152, guid: 5fccb4cbac5226944b8cb3bc8b6b55e7, type: 3}
   bPrefab: {fileID: 1163259955209510152, guid: 4cfc66642ea5d8c409a8599206138894, type: 3}
+--- !u!114 &1956302365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956302362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals: []
+    m_Events: []
 --- !u!1 &2073639487
 GameObject:
   m_ObjectHideFlags: 0
