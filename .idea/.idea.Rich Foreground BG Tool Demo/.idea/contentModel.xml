@@ -11,6 +11,7 @@
         <e p="GameDataManager.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Component Data" t="Include">
+            <e p="BGMoveComponent.cs" t="Include" />
             <e p="FlutterAwayComponent.cs" t="Include" />
             <e p="ParrallaxTag.cs" t="Include" />
             <e p="SineCurveComponent.cs" t="Include" />
@@ -23,10 +24,13 @@
             <e p="FlutterAwaySystem.cs" t="Include" />
             <e p="FlutterMoveSystem.cs" t="Include" />
             <e p="GameMoveSystem.cs" t="Include" />
+            <e p="SimpleBGMoveSystem.cs" t="Include" />
             <e p="SineMoveSystem.cs" t="Include" />
             <e p="TempMoveSystem.cs" t="Include" />
           </e>
-          <e p="Timeline" t="Include">
+        </e>
+        <e p="Timeline" t="Include">
+          <e p="Custom Playables" t="Include">
             <e p="FlutterAwayPlayableTrack.cs" t="Include" />
             <e p="FlyAwayClip.cs" t="Include" />
             <e p="FlyAwayPlayableBehaviour.cs" t="Include" />

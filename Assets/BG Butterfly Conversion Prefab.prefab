@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1163259955209510154}
   - component: {fileID: 1163259955209510153}
-  - component: {fileID: 3545855024305923934}
   - component: {fileID: -4844448077164431808}
   - component: {fileID: 2541207521899754071}
   - component: {fileID: -6035918437238937908}
+  - component: {fileID: 2805284770464467226}
   m_Layer: 0
-  m_Name: Butterfly Conversion Prefab
+  m_Name: BG Butterfly Conversion Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,21 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3545855024305923934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1163259955209510152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e145c6236311f8248a3d256f707e3750, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  curTime: 0
-  maxTime: 0
-  waiting: 0
 --- !u!114 &-4844448077164431808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,3 +132,15 @@ MonoBehaviour:
     x: 0
     y: 0
     z: 0
+--- !u!114 &2805284770464467226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163259955209510152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8820d09111a54d54a49109d446efc4be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
