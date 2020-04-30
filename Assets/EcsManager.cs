@@ -38,7 +38,7 @@ public class EcsManager : MonoBehaviour
             manager.SetComponentData(entity, new Translation { Value = new float3(posX, 
                 UnityEngine.Random.Range(5f, 10f), UnityEngine.Random.Range(0, 0)) });
             manager.SetComponentData(entity, new Rotation { Value = quaternion.identity });
-            manager.SetComponentData(entity, new WayPointMoveComponent { speed = UnityEngine.Random.Range(2, 8),
+            manager.SetComponentData(entity, new WayPointMoveComponent { speed = UnityEngine.Random.Range(1.5f, 3f),
                 currentWP = UnityEngine.Random.Range(0, GameDataManager.S.waypoints.Length)});
             manager.SetComponentData(entity, new WaitComponent { maxTime = UnityEngine.Random.Range(1f, 4f) });
             manager.SetComponentData(entity, new SineCurveComponent { frequency = UnityEngine.Random.Range(5, 10f),

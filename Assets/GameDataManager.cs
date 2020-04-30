@@ -16,6 +16,8 @@ public class GameDataManager : MonoBehaviour
 
     public float BGZOffset = 3.25f;
 
+    public int numBGButterflies;
+
     private void Awake()
     {
         if (S != null && S != this)
@@ -33,11 +35,11 @@ public class GameDataManager : MonoBehaviour
             wps[i] = waypoints[i].position;
         }
         
-        bgWPS = new float3[50];
+        bgWPS = new float3[numBGButterflies];
         
         bool leftSide = true;
         
-        for (int i = 0; i < 50; i++)
+        for (int i = 0; i < bgWPS.Length; i++)
         {
             leftSide = !leftSide;
             

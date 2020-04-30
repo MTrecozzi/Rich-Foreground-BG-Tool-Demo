@@ -650,6 +650,7 @@ MonoBehaviour:
   wps: []
   bgWPS: []
   BGZOffset: 3.25
+  numBGButterflies: 100
 --- !u!4 &224806519
 Transform:
   m_ObjectHideFlags: 0
@@ -2102,7 +2103,7 @@ MonoBehaviour:
   m_ImpulseDefinition:
     m_ImpulseChannel: 1
     m_RawSignal: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
-    m_AmplitudeGain: 2
+    m_AmplitudeGain: 2.5
     m_FrequencyGain: 1
     m_RepeatMode: 0
     m_Randomize: 1
