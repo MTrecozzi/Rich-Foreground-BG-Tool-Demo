@@ -29,9 +29,11 @@ public class EcsManager : MonoBehaviour
         
         var rand = new System.Random();
 
+        var e = GameObjectConversionUtility.ConvertGameObjectHierarchy(bPrefab, settings);
+
         for (int i = 0; i < 10; i++)
         {
-            var entity = manager.Instantiate(GameObjectConversionUtility.ConvertGameObjectHierarchy(bPrefab, settings));
+            var entity = manager.Instantiate(e);
             
             float posX = rand.NextDouble() > 0.5 ? -15 : 15;
 
@@ -55,8 +57,12 @@ public class EcsManager : MonoBehaviour
         var e = GameObjectConversionUtility.ConvertGameObjectHierarchy(bgPrefab, settings);
 
         bool leftSide = true;
-        
-        for (int i = 0; i < GameDataManager.S.bgWPS.Length; i++)
+
+        int length = GameDataManager.S.bgWPS.Length;
+
+        float zPos = GameDataManager.S.bgWPS[0].z;
+
+        for (int i = 0; i < length; i++)
         {
             var entity = manager.Instantiate(e);
             
@@ -65,12 +71,12 @@ public class EcsManager : MonoBehaviour
             float posX = leftSide ? -15 : 15;
 
             manager.SetComponentData(entity, new Translation { Value = new float3(posX, 
-                UnityEngine.Random.Range(5f, 10f), GameDataManager.S.bgWPS[0].z) });
+                UnityEngine.Random.Range(5f, 10f), zPos) });
             manager.SetComponentData(entity, new Rotation { Value = quaternion.identity });
             manager.SetComponentData(entity, new WayPointMoveComponent { speed = UnityEngine.Random.Range(1.5f, 3f),
                 currentWP = UnityEngine.Random.Range(0, GameDataManager.S.waypoints.Length)});
-            manager.SetComponentData(entity, new SineCurveComponent { frequency = UnityEngine.Random.Range(5, 10f),
-                amp = UnityEngine.Random.Range(100, 200)});
+            manager.SetComponentData(entity, new SineCurveComponent { frequency = 7f,
+                amp = 150});
             
         }
     }
