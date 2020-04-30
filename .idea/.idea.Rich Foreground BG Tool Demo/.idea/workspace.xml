@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f902be12-4858-4dbc-bd3f-b7f4fee1da04" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EcsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EcsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scaling Up.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scaling Up.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sequencing/Cinematic DirectorTimeline.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sequencing/Cinematic DirectorTimeline.playable" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +124,7 @@
       <workItem from="1587764802282" duration="1437000" />
       <workItem from="1587766256428" duration="1629000" />
       <workItem from="1588197842594" duration="6665000" />
-      <workItem from="1588249622267" duration="5076000" />
+      <workItem from="1588249622267" duration="5821000" />
     </task>
     <servers />
   </component>
