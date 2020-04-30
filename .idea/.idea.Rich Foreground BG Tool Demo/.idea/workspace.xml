@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f902be12-4858-4dbc-bd3f-b7f4fee1da04" name="Default Changelist" comment="" />
+    <list default="true" id="f902be12-4858-4dbc-bd3f-b7f4fee1da04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scaling Up.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scaling Up.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Timeline/ECSControlPlayableBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Timeline/ECSControlPlayableBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Timeline/FlutterAwayPlayableTrack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Timeline/FlutterAwayPlayableTrack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Timeline/FlyAwayClip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Timeline/FlyAwayClip.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sequencing/Cinematic DirectorTimeline.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sequencing/Cinematic DirectorTimeline.playable" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,23 +20,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/TempMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EcsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FlyAwayEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/WayPointMoveComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Timeline/ECSControlPlayableBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/FlutterAwaySystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/FlutterAwayComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Timeline/FlyAwayPlayableBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/TransformOffsetComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/WaitComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/GameMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Scaling Up.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/SineMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/FlutterMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/ParrallaxTag.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/TempMoveDemoTag.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/TempMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/WayPointMoveComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/FlutterAwaySystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/FlutterAwayComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/WaitComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Scaling Up.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/SineMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Timeline/FlutterAwayPlayableTrack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.3.0/Editor/treeview/TrackGui/TimelineTrackGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/SineCurveComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Timeline/FlyAwayClip.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -50,8 +62,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Timeline/CustomClip.cs" />
         <option value="$PROJECT_DIR$/Assets/FlyAwayEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Timeline/CustomBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Timeline/ECSControlPlayableBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/EcsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Timeline/ECSControlPlayableBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Timeline/FlutterAwayPlayableTrack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Timeline/FlyAwayClip.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Timeline/FlyAwayPlayableBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -109,7 +124,7 @@
       <workItem from="1587571195210" duration="611000" />
       <workItem from="1587764802282" duration="1437000" />
       <workItem from="1587766256428" duration="1629000" />
-      <workItem from="1588197842594" duration="4782000" />
+      <workItem from="1588197842594" duration="5879000" />
     </task>
     <servers />
   </component>

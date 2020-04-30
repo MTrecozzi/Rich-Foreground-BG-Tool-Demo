@@ -6,16 +6,15 @@ using UnityEngine.Playables;
 using UnityEngine.Timeline;
 
 [Serializable]
-public class CustomClip : PlayableAsset, ITimelineClipAsset
+public class FlyAwayClip : PlayableAsset, ITimelineClipAsset
 {
 
-    [SerializeField] private CustomBehaviour customBehaviour;
-
-    [SerializeField] private Color light;
+    [SerializeField]
+    private FlyAwayPlayableBehaviour flyAwayPlayableBehaviour;
 
     public override Playable CreatePlayable(PlayableGraph graph, GameObject owner)
     {
-        return ScriptPlayable<CustomBehaviour>.Create(graph, customBehaviour);
+        return ScriptPlayable<FlyAwayPlayableBehaviour>.Create(graph, flyAwayPlayableBehaviour);
     }
 
     public ClipCaps clipCaps => ClipCaps.None;

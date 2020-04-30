@@ -5,8 +5,8 @@ using UnityEngine.Timeline;
 
 [TrackColor(0.3607843F, 0.9294118F, 0.1568628F)]
 [TrackBindingType(typeof(FlyAwayEvent))]
-[TrackClipType(typeof(CustomClip))]
-public class CustomPlayableTrack : TrackAsset
+[TrackClipType(typeof(FlyAwayClip))]
+public class FlutterAwayPlayableTrack : TrackAsset
 {
     
 }

@@ -6,11 +6,11 @@ using UnityEngine;
 using UnityEngine.Playables;
 
 [Serializable]
-public class CustomBehaviour : PlayableBehaviour
+public class FlyAwayPlayableBehaviour : PlayableBehaviour
 {
     private bool firstFrameHappened = false;
 
-    private FlyAwayEvent _event;
+    [SerializeField] private FlyAwayEvent _event;
     
     public override void ProcessFrame(Playable playable, FrameData info, object playerData)
     {
@@ -31,6 +31,7 @@ public class CustomBehaviour : PlayableBehaviour
             firstFrameHappened = true;
         }
     }
+    
 
     public override void OnBehaviourPause(Playable playable, FrameData info)
     {
