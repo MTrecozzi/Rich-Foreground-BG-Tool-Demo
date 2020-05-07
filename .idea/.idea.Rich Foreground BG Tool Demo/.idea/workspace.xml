@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f902be12-4858-4dbc-bd3f-b7f4fee1da04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rich Foreground BG Tool Demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EcsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EcsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scaling Up.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scaling Up.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sequencing/Cinematic DirectorTimeline.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sequencing/Cinematic DirectorTimeline.playable" afterDir="false" />
     </list>
@@ -27,6 +28,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.9.1-preview.15/Unity.Entities/EntityDataAccess.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/TransformOffsetComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Component Data/WaitComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.9.1-preview.15/Unity.Entities.Hybrid/GameObjectConversion/GameObjectConversionUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/GameMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/SimpleBGMoveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Scaling Up.unity" root0="FORCE_HIGHLIGHTING" />
@@ -127,7 +129,7 @@
       <workItem from="1587766256428" duration="1629000" />
       <workItem from="1588197842594" duration="6665000" />
       <workItem from="1588249622267" duration="5821000" />
-      <workItem from="1588860698005" duration="1000" />
+      <workItem from="1588860698005" duration="1477000" />
     </task>
     <servers />
   </component>

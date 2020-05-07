@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Unity.Entities;
 using Unity.Mathematics;
@@ -15,12 +16,33 @@ public class EcsManager : MonoBehaviour
     public GameObject bgPrefab;
     private GameObjectConversionSettings settings;
 
-    // Start is called before the first frame update
-    void Start()
+    private Entity fgSource;
+    private Entity bgSource;
+
+    private const int NumFgButterflies = 10;
+
+    private float3[] fgStartingPos = new float3[NumFgButterflies];
+
+
+    private void Awake()
     {
+        
         world = World.DefaultGameObjectInjectionWorld;
         manager = World.DefaultGameObjectInjectionWorld.EntityManager;
         settings = GameObjectConversionSettings.FromWorld(world, null);
+        
+        fgSource = GameObjectConversionUtility.ConvertGameObjectHierarchy(bPrefab, settings);
+        bgSource = GameObjectConversionUtility.ConvertGameObjectHierarchy(bgPrefab, settings);
+
+        for (int i = 0; i < NumFgButterflies; i++)
+        {
+            bool half = i < NumFgButterflies / 2;
+            
+            float posX = half ? -15 : 15;
+            
+            fgStartingPos[i] = new float3(posX, UnityEngine.Random.Range(5f, 10f), 0);
+            
+        }
     }
 
     public void SpawnForegroundButterFlies()
@@ -28,17 +50,13 @@ public class EcsManager : MonoBehaviour
         // Creates entities that spawn in a random spot, with a random move and rotation speed, and a random wait time.
         
         var rand = new System.Random();
-
-        var e = GameObjectConversionUtility.ConvertGameObjectHierarchy(bPrefab, settings);
+        
 
         for (int i = 0; i < 10; i++)
         {
-            var entity = manager.Instantiate(e);
-            
-            float posX = rand.NextDouble() > 0.5 ? -15 : 15;
+            var entity = manager.Instantiate(fgSource);
 
-            manager.SetComponentData(entity, new Translation { Value = new float3(posX, 
-                UnityEngine.Random.Range(5f, 10f), UnityEngine.Random.Range(0, 0)) });
+            manager.SetComponentData(entity, new Translation { Value = fgStartingPos[i] });
             manager.SetComponentData(entity, new Rotation { Value = quaternion.identity });
             manager.SetComponentData(entity, new WayPointMoveComponent { speed = UnityEngine.Random.Range(1.5f, 3f),
                 currentWP = UnityEngine.Random.Range(0, GameDataManager.S.waypoints.Length)});
@@ -52,9 +70,7 @@ public class EcsManager : MonoBehaviour
     public void SpawnBackgroundButterflies()
     {
         var rand = new System.Random();
-
-
-        var e = GameObjectConversionUtility.ConvertGameObjectHierarchy(bgPrefab, settings);
+        
 
         bool leftSide = true;
 
@@ -64,7 +80,7 @@ public class EcsManager : MonoBehaviour
 
         for (int i = 0; i < length; i++)
         {
-            var entity = manager.Instantiate(e);
+            var entity = manager.Instantiate(bgSource);
             
             leftSide = !leftSide;
             
